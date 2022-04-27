@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+app.get('/html-layout', (req, res) => {
+  res.sendFile(path.resolve('pages/htmllayout.html'));
+});
+
 app.get('/list-demo', (req, res) => {
   res.sendFile(path.resolve('pages/lists.html'));
 });

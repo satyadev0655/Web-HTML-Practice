@@ -1,30 +1,56 @@
 <html>
-  <body>
-   
-    <div class="header">
+  <head>
+    <style>
+      .header {
+        background-color: red;
+      }
 
+      .nav {
+        float: left;
+        width: 30%;
+        background-color: yellow;
+        height:200px;
+      }
+
+      .nav ul {
+        list-style-type: none;
+      }
+
+      .section::after {
+        clear: both;
+        content:"",
+        display:table
+      }
+
+      .content {
+        width: 70%;
+        background-color: blue;
+        float: left;
+        height:200px;
+      }
+
+      .footer {
+
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
       <h1>News Site</h1>
     </div>
 
-
-    <div class="nav">
-      <ul>
+    <div class="section">
+      <div class="nav">
+        <ul>
           <li>Home</li>
           <li>About Us</li>
-      </ul>
-  </div>
+        </ul>
+      </div>
 
+      <div class="content">Sample Text</div>
+    </div>
 
-  <div class="content">
-    Sample Text
-</div>
-
-
-<div class="footer">
-Footer
-
-</div>
-  
-  
+    <div class="footer">Footer</div>
   </body>
 </html>

@@ -14,6 +14,12 @@ app.get('/list-demo', (req, res) => {
   res.sendFile(path.resolve('pages/lists.html'));
 });
 
+
+app.get('/links-demo', (req, res) => {
+  res.sendFile(path.resolve('pages/links.html'));
+});
+
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

@@ -14,6 +14,10 @@ app.get('/form-demo', (req, res) => {
   res.sendFile(path.resolve('pages/form.html'));
 });
 
+app.get('/idclass', (req, res) => {
+  res.sendFile(path.resolve('pages/idclass.html'));
+});
+
 app.get('/marquee-demo', (req, res) => {
   res.sendFile(path.resolve('pages/marquee.html'));
 });

@@ -14,6 +14,10 @@ app.get('/marquee-demo', (req, res) => {
   res.sendFile(path.resolve('pages/marquee.html'));
 });
 
+app.get('/sections-demo', (req, res) => {
+  res.sendFile(path.resolve('pages/sectionsdemo.html'));
+});
+
 app.get('/html-layout', (req, res) => {
   res.sendFile(path.resolve('pages/htmllayout.html'));
 });

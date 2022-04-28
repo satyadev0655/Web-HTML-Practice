@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+app.get('/form-demo', (req, res) => {
+  res.sendFile(path.resolve('pages/form.html'));
+});
+
 app.get('/marquee-demo', (req, res) => {
   res.sendFile(path.resolve('pages/marquee.html'));
 });
